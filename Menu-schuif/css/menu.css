@@ -1,0 +1,40 @@
+nav {
+    background-color: bisque;
+    color: gray;
+    position: fixed;
+    top: 0;
+    left: 30vw;
+    width: 100vw;
+    height: 100vh;
+    transition: left .5s ease-in-out;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav a {
+    color: gray;
+    font-size: 1.2em;
+    padding: 1em 2em;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+}
+nav a.active {
+    padding: 1em 1.3em;
+    border-left: .7em solid gray;
+    border-right: .7em solid gray;
+}
+
+#menuScroller:checked ~ nav {
+    left: 100vw;
+}
+
+#menuScroller {
+    display: none;
+}
+label.get-menu-scroller {
+    padding: 1rem 2rem;
+    display: block;
+}
