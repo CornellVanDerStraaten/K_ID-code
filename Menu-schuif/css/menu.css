@@ -3,10 +3,10 @@ nav {
     color: gray;
     position: fixed;
     top: 0;
-    left: 30vw;
+    right: 0vw;
     width: 100vw;
     height: 100vh;
-    transition: left .5s ease-in-out;
+    transition: right .5s ease-in-out;
 }
 nav ul {
     list-style: none;
@@ -28,7 +28,7 @@ nav a.active {
 }
 
 #menuScroller:checked ~ nav {
-    left: 100vw;
+    right: 100vw;  
 }
 
 #menuScroller {
@@ -37,4 +37,15 @@ nav a.active {
 label.get-menu-scroller {
     padding: 1rem 2rem;
     display: block;
+    font-size: 20px;
 }
+label.get-menu {
+    padding: 1rem 2rem;
+    display: block;
+    border-bottom: 2px solid gray;
+    text-align: right;
+    font-size: 20px;
+}
+
+
+
