@@ -68,3 +68,30 @@ label {
         left: 2em;
     }
 }
+
+/* RIPPLE */
+.ripple-square {
+    height: 12em;
+    border: 2px solid darkgray;
+    position: relative;
+}
+.ripple {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 600px;
+    transform: scale(0);
+    opacity: 1;
+}
+
+.expand {
+    animation: grow 1s ease-out;
+}
+
+@keyframes grow {
+    100% {
+        transform: scale(12);
+        opacity: 0;
+    }
+}
