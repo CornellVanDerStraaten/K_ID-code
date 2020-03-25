@@ -1,0 +1,70 @@
+label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: cornsilk;
+    display: block;
+    padding: 2em;
+    margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: 1fr auto ;
+}
+.switch {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 3.5em;
+    height: 1.6em;
+    border-radius: 2em;
+    background-color: darkgreen;
+    position: relative;
+    outline: none;
+    transition: background-color .5s linear;
+}
+.switch::after {
+    content: "";
+    background-color: white;
+    display: block;
+    position: relative;
+    top: .15em;
+    left: .15em;
+    width: 1.15em;
+    height: 1.15em;
+    border-radius: 2em;
+    border: .1em solid gray;
+    transition: left .5s ease-in-out;
+}
+.switch:checked {
+    background-color: blue;
+}
+.switch:checked::after {
+    left: 2em;
+}
+/* Als ik het alleen in supports zet doet hij het niet bij mij... */
+@supports ( (-webkit-appearance: none;) or (-moz-appearance: none;)){
+    .switch {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 3.5em;
+        height: 1.6em;
+        border-radius: 2em;
+        background-color: darkgreen;
+        position: relative;
+        outline: none;
+    }
+    .switch::after {
+        content: "";
+        background-color: white;
+        display: block;
+        position: relative;
+        top: .15em;
+        left: .15em;
+        width: 1.15em;
+        height: 1.15em;
+        border-radius: 2em;
+        border: .1em solid gray;
+    }
+    .switch:checked {
+        background-color: blue;
+    }
+    .switch:checked::after {
+        left: 2em;
+    }
+}
