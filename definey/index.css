@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Atami;
+    src: url("assets/fonts/Atami-Display-Regular.otf") format("opentype");
+}
+
+body,html {
+    overflow-x: hidden!important;
+    overflow-y: hidden!important;
+    overflow: hidden!important;
+}
+body {
+    position: relative!important;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.content-wrapper {
+    background-image: url('assets/achtergrond.png');
+    background-size: 175vw;
+    background-position: -178px -173px;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.register-button {
+    float: right;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    font-family: atami;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.logo {
+    width: 30%;
+    margin: 30px 0 0 45px;
+}
+
+.middle-text {
+    height: 150px;
+    width: 250px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: atami;
+    background-image: url('assets/lines.png');
+    background-repeat: no-repeat;
+    background-position: 30px 80px;
+}
+.middle-text-start {
+    font-size: 27px;
+    color: #616161;
+    margin: 0;
+}
+
+.stairs-top {
+    font-size: 27px;
+    color: #616161;
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 45px;
+}
+.stairs-middle {
+    font-size: 23px;
+    color: #616161;
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 110px;
+}
+.stairs-bottom {
+    font-size: 27px;
+    color: #616161;
+    margin: 0;
+    margin-left: 145px;
+}
+
+.floating-label-group {
+	position: relative;
+	margin-top: 15px;
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.floating-label {
+    font-size: 13px;
+    color: #cccccc;
+    position: absolute;
+    pointer-events: none;
+    top: 4px;
+    left: 33px;
+    transition: all 0.1s ease;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+    top: -20px;
+    bottom: 0px;
+    left: 0px;
+    font-size: 15px;
+    opacity: 1;
+    color: #404040;
+}
+
+.form-control {
+    height: 20px;
+    font-size: 15px;
+    margin: 0;
+    width: 100px;
+}
+.block {
+    background-color: white;
+    color: darkgray;
+    margin: 0;
+    padding: 0 5px;
+    padding-bottom: 4px;
+}
