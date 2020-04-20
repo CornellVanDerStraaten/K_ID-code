@@ -32,12 +32,12 @@ body {
     font-family: atami;
     font-size: 20px;
     margin-top: 10px;
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 .logo {
     width: 30%;
-    margin: 30px 0 0 45px;
+    margin: 30px 0 0 35px;
 }
 
 .middle-text {
@@ -78,19 +78,27 @@ body {
 }
 
 .floating-label-group {
-	position: relative;
-	margin-top: 15px;
+    position: relative;
+    width: auto;
+    background-color: white;
+    margin-top: 15px;
+    border: 1px solid gray;
     margin-bottom: 25px;
+    margin-right: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .floating-label {
-    font-size: 13px;
+    font-size: 16px;
     color: #cccccc;
     position: absolute;
     pointer-events: none;
     top: 4px;
-    left: 33px;
+    left: 40px;
     transition: all 0.1s ease;
+}
+
+.form-div {
+    margin: 10% 0 0 45%;
 }
 
 input:focus ~ .floating-label,
@@ -104,15 +112,52 @@ input:not(:focus):valid ~ .floating-label {
 }
 
 .form-control {
-    height: 20px;
+    height: 30px;
     font-size: 15px;
     margin: 0;
-    width: 100px;
+    width: 130px;
+    border: none;
+    border-left: 1px solid gray;
 }
 .block {
     background-color: white;
     color: darkgray;
     margin: 0;
-    padding: 0 5px;
+    padding: 0 5px 0 10px;
     padding-bottom: 4px;
+}
+
+.login-button {
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    margin-left: 40px;
+    background-color: rgb(5, 197, 5);
+    font-size: 15px;
+}
+
+/* MODAAL */
+
+.modaal-achtergrond {
+    z-index: 5;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.247);
+}
+
+.modaal {
+    width: 80vw;
+    height: 90vh;
+    background: linear-gradient(20deg,#18D3E0, white, #EB8576);
+    margin: 10% 10%;
+    border-radius: 35px;
+    display: grid;
+    grid-template-rows: 1.8fr 5fr 1fr;
+    justify-content: center;
+}
+.modaal-logo {
+    display: block;
+    height: 100px;
+    margin-top: auto;
 }

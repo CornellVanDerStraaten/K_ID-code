@@ -10,9 +10,19 @@
 </head>
 
 <body>
+    <div class="modaal-achtergrond" id="modaal" onclick="closeRegisterDisplay()">
+        <div class="modaal">
+            <img src="assets/Logo.svg" alt="List with tasks" class="modaal-logo">
+            <form action="#">
+                <div class="modaal-form-item">
+
+                </div>
+            </form>
+        </div>
+    </div>
     <div class="content-wrapper">
         <div class="register-button-div">
-            <button class="register-button">Register</button>
+            <button class="register-button" onclick="registerDisplay()">Register</button>
         </div>
         <img src="assets/Logo.svg" alt="List with tasks" class="logo">
         <div class="middle-text">
@@ -34,10 +44,15 @@
                     <input type="password" id="password" class="form-control" autocomplete="off" required />
                     <label class="floating-label">Password</label>
                 </div>
+
+                <button type="submit" class="login-button">LOGIN</button>
             </form>
         </div>
     </div>
+    
 
+    </div>
+<script src="script.js "></script>
 </body>
 
 </html>
