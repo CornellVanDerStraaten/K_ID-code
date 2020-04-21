@@ -5,18 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Definey</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/1eb7c10cba.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="modaal-achtergrond" id="modaal" onclick="closeRegisterDisplay()">
-        <div class="modaal">
-            <img src="assets/Logo.svg" alt="List with tasks" class="modaal-logo">
-            <form action="#">
+    <div class="modaal-achtergrond" id="modaal">
+        <div class="modaal" id="inModaal">
+            <img src="assets/Logo.svg" alt="List with tasks" class="modaal-logo" onclick="closeRegisterDisplay()">
+            <form action="week.html" class="modaal-form">
                 <div class="modaal-form-item">
-
+                    <div class="modaal-form-item-placement and border">
+                        <label class="modal-form-icon"><i class="fas fa-user-alt"></i></label>
+                        <input type="text" name="Voornaam" id="voornaamForm" autofocus autocomplete="off" required
+                            class="modaal-form-input">
+                        <label class="floating-label-form">Voornaam</label>
+                    </div>
                 </div>
+
+                <div class="modaal-form-item">
+                    <div class="modaal-form-item-placement and border">
+                        <label class="modal-form-icon"><i class="fas fa-user-alt"></i></label>
+                        <input type="text" name="achternaam" id="achternaamForm" autofocus autocomplete="off" required
+                            class="modaal-form-input">
+                        <label class="floating-label-form">Achternaam</label>
+                    </div>
+                </div>
+
+                <div class="modaal-form-item">
+                    <div class="modaal-form-item-placement and border">
+                        <label class="modal-form-icon"><i class="fas fa-envelope"></i></label>
+                        <input type="text" name="email" id="emailForm" autofocus autocomplete="off" required
+                            class="modaal-form-input">
+                        <label class="floating-label-form">Email</label>
+                    </div>
+                </div>
+
+                <div class="modaal-form-item">
+                    <div class="modaal-form-item-placement and border">
+                        <label class="modal-form-icon"><i class="fas fa-lock"></i></label>
+                        <input type="password" name="Password" id="passwordForm" autofocus autocomplete="off" required
+                            class="modaal-form-input">
+                        <label class="floating-label-form">Wachtwoord</label>
+                    </div>
+                </div>
+
+                <div class="modaal-form-item">
+                    <div class="modaal-form-item-placement and border">
+                        <label class="modal-form-icon"><i class="fas fa-lock"></i></label>
+                        <input type="password" name="passwordSecond" id="passwordFormSecond" autofocus
+                            autocomplete="off" required class="modaal-form-input">
+                        <label class="floating-label-form">Wachtwoord herhaling</label>
+                    </div>
+                </div>
+
+                <input type="submit" value="REGISTREER" class="form-register-button">
             </form>
         </div>
     </div>
@@ -32,7 +75,7 @@
             <p class="stairs-bottom">step</p>
         </div>
         <div class="form-div">
-            <form action="#">
+            <form action="week.html">
                 <div class="floating-label-group">
                     <label class="block"><i class="fas fa-user-alt"></i></label>
                     <input type="text" id="username" class="form-control" autocomplete="off" autofocus required />
@@ -49,10 +92,10 @@
             </form>
         </div>
     </div>
-    
+
 
     </div>
-<script src="script.js "></script>
+    <script src="script.js "></script>
 </body>
 
 </html>
