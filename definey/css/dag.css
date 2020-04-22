@@ -1,0 +1,121 @@
+@font-face {
+    font-family: Atami;
+    src: url("assets/fonts/Atami-Display-Regular.otf") format("opentype");
+}
+
+body,html {
+    overflow-x: hidden!important;
+    overflow-y: hidden!important;
+    overflow: hidden!important;
+}
+body {
+    position: relative!important;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.quick-background {
+    background-image: url('../assets/achtergrond.png');
+    opacity: 1;
+    background-size: 175vw;
+    background-position: -178px -173px;
+    background-repeat: no-repeat;
+    height: 100vh;
+    z-index: 0;
+}
+.content-wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: .7fr 1fr 1fr 1fr 1fr 1fr;
+}
+.triangle-left {
+    width: 0; 
+    height: 0; 
+    margin-top: 2.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent; 
+    border-right:50px solid rgb(14, 14, 15);
+    float: left;
+}
+.dag {
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 5%;
+}
+.taak-card {
+    margin: 1.5% 10% 1.5% 10%;
+    width: 80%;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: .35fr 1fr .4fr;
+}
+.card-time {
+    margin: auto 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 10px;
+}
+.time {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.time-divider {
+    width: 10px;
+    height: 5px;
+    background-color: black;
+    font-family: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+.card-task {
+    border-left: 2px solid gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.task {
+   margin: 20% 0;
+   margin-left: 5px;
+}
+.card-button {
+    width: 0; 
+    height: 0; 
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid gray;
+    margin: auto 0;
+    margin-left: 10px;
+}
+.card-done {
+    border-left: 40px solid #2AAE71;
+}
+.card-not-done {
+    border-left: 40px solid #FF1616;
+}
+.card-grayed {
+    position: absolute;
+    height: 15%;
+    margin: 1.5% 10% 1.5% 10%;
+    left: .47%;
+    top: 14%;
+    opacity: 0.6;
+    width: 81%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
+}
+.now {
+    position: absolute;
+    left: 45%;
+    top: 31.5%;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+}
